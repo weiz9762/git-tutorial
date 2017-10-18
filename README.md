@@ -12,8 +12,8 @@ _by Wei Zheng_
 ---
 ## Initial Setup
 #### _How do you create a GitHub Account?_
-* [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](file:///Users/student/Desktop/Screen%20Shot%202017-10-18%20at%2010.37.02%20AM.png)
-* After you filled in your information, clcik the [green button]() "Create an account"
+* [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](https://imgur.com/wV5qZaE)
+* After you filled in your information, clcik the [green button](https://gyazo.com/c0f29e2430ba6618fc2d0ce333910b36) "Create an account"
 * You will now choose your plan, choose ["Unlimited public repositories for free"]()  
 
 ##### After Setup your account, you need create a SSH key  
