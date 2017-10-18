@@ -1,14 +1,18 @@
 # GitHub Tutorial
 
-_by <your-name-here>_
+_by Wei Zheng_
 
 ---
 ## Git vs. GitHub
+* Git: 
+* GitHub:
 
 
 
 ---
 ## Initial Setup
+* How do you create a GitHub Account?
+1. [Go to Github](github.com) and you will see something like ![this](github-learning/github-tutorial/github.com-image.png)
 
 
 
