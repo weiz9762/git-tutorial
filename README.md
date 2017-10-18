@@ -24,3 +24,12 @@ _by <your-name-here>_
 
 ---
 ## Rolling Back Changes
+
+
+
+---
+## Error Handling
+
+
+---
+## Collaboration
