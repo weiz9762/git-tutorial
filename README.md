@@ -18,9 +18,9 @@ _by Wei Zheng_
 * Lastly, you will Tailor you experience but checking the box that applied to you ![step3](https://i.imgur.com/buAqdYv.png?2)  
 #### After Setup your account, you will need create a SSH key  
 ### _So, How do you create a SSH key?_
-* First, as you login your GitHub account, you will see something like this ![main page](https://i.imgur.com/hCxprdM.png)
-* Then, you will go to the top right and click your icon, and you will see ![icon](https://i.imgur.com/lC8IIAK.png) and click the "setting"
-* After you clicked setting, you the right you will see something like this ![SHH key setting](https://i.imgur.com/mFxXfls.png), go head and clicked on "SSH and GPG keys"
+* First, as you login your GitHub account, you will see something like this ![main page](github-homepage)
+* Then, you will go to the top right and click your icon, and you will see ![icon](icon.png) and click the "setting"
+* After you clicked setting, you the right you will see something like this ![SHH key setting](setting-page.png), go head and clicked on "SSH and GPG keys"
 * As you do so, you will see SSH Keys and GPG Keys sections, on the right of SSH Keys section, clicked "New SSH key" ![New SSH keys green button](https://i.imgur.com/N2Gmfzd.png)
 
 
