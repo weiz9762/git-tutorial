@@ -32,6 +32,21 @@ You will see something like this ![this](repo-setup.png)
 
 ---
 ## Workflow & Commands
+####After setting up your repository, and having some basic understand of how git works, you will learning how to "push" your work to GitHub
+
+
+### git status
+* _**What is git status?**_
+    * 
+### git add  
+* _**What is git add?**_
+    * 
+### git commit  
+* _**What is git commit?**_
+    * 
+### git push
+* _**What is git push?**_
+* 
 
 
 
