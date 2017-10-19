@@ -4,9 +4,10 @@ _by Wei Zheng_
 
 ---
 ## Git vs. GitHub
-* Git: 
-* GitHub:
+* Git is the system that used for version control, in other word, git helps you keep your code
+* GitHub is the platform that you can visually see your code
 
+#### _GitHub need Git, but git does not required GitHub!_
 
 
 ---
@@ -32,7 +33,7 @@ You will see something like this ![this](repo-setup.png)
 
 ---
 ## Workflow & Commands
-####After setting up your repository, and having some basic understand of how git works, you will learning how to "push" your work to GitHub
+#### After setting up your repository, and having some basic understand of how git works, you will learning how to "push" your work to GitHub
 
 
 ### git status
@@ -46,7 +47,7 @@ You will see something like this ![this](repo-setup.png)
     * 
 ### git push
 * _**What is git push?**_
-* 
+    * 
 
 
 
