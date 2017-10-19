@@ -32,6 +32,7 @@ _by Wei Zheng_
 
 ---
 ## Rolling Back Changes
+There are many times that you made mistake and accidentally add, commit or even push the file. There is not redo botton in git, but you can there are some ways that you can "fix" your mistakes
 
 
 
