@@ -26,6 +26,7 @@ _by Wei Zheng_
 
 ---
 ## Repository Setup
+You will see something like this ![this](repo-setup.png)
 
 
 
