@@ -37,8 +37,12 @@ You will see something like this ![this](repo-setup.png)
 
 
 ### git status
-* _**What is git status?**_
-    * 
+_**Q: What is git status?**_  
+**A: git status is the git command that you helps you know the status of you files, there are three different status of file that you can find through git status**
+1. Untracked:
+2. Modified:
+3. Tracked/Staged:
+
 ### git add  
 * _**What is git add?**_
     * 
