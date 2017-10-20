@@ -38,23 +38,24 @@ You will see something like this ![this](repo-setup.png)
 
 ### git status
 _**Q: What is git status?**_  
-**A: git status is the git command that you helps you know the status of you files, there are three different status of file that you can find through git status**
-1. Untracked:
-2. Modified:
+**A: git status is the git command that helps you know the status of your files, there are three different status of file that you can find through git status**
+1. Untracked: The file is in your directory, but it is not in the staging area (not ready to be commited)
+2. Modified: The file is i
 3. Tracked/Staged:
 
 ### git add  
 _**Q: What is git add?**_  
-**A:**  
+**A: By using git add, you add the file you want into the staging area, where works are tracked and ready to be commit**  
+
 | Working Directory | Staging Area | Repository |
 | :-------------: |:-------------:|:-----:|
 | Where the file stored before git add. You can makde changes to the file in working directory| Where the file stored after git add, it is a temporary space that file rest, so they can be commit anytime  | Where all the changes are being stored and saved it as commit |
 ### git commit  
-* _**What is git commit?**_
-    * 
+_**Q: What is git commit?**_  
+**A: After add you add file to the staging area, the works are tracked but it is not being commit(not being saved). Therefore, git commit saves your work and remember the changes as commits!**
 ### git push
-* _**What is git push?**_
-    * 
+_**Q: What is git push?**_  
+**A:**
 
 
 
