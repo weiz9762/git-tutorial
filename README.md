@@ -48,7 +48,7 @@ _**Q: What is git add?**_
 **A: By using git add, you add the file you want into the staging area, where works are tracked and ready to be commit**  
 
 You can git add many ways
-* git add filename: you add specific file to the staging area
+1. git add filename: you add specific file to the staging area
 
 ```bash
 username:~/workspace/sep (master) $ touch sep-9 sep-10 sep-11 sep-12
@@ -64,7 +64,7 @@ Changes to be committed:
         new file:   sep-11
 ```
 
-* git add . : you add all the exist file to the staging area
+2. git add . : you add all the exist file to the staging area
 
 ```bash
 username:~/workspace/sep (master) $ git add .
@@ -82,7 +82,7 @@ Changes to be committed:
         new file:   sep-12
 ```
 
-* git add --all : you add all the file, including the deleted file to the staging area 
+3. git add --all : you add all the file, including the deleted file to the staging area 
 
 ```bash
 username:~/workspace/sep (master) $ mv sep-9 sep-09
