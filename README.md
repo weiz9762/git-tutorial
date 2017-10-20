@@ -40,12 +40,78 @@ You will see something like this ![this](repo-setup.png)
 _**Q: What is git status?**_  
 **A: git status is the git command that helps you know the status of your files, there are three different status of file that you can find through git status**
 1. Untracked: The file is in your directory, but it is not in the staging area (not ready to be commited)
-2. Modified: The file is i
-3. Tracked/Staged:
+2. Modified: The file was previously added, but there is change of the file (being renamed or deleted)
+3. Tracked/Staged: The file is in the staging area and ready to be commit!!
 
 ### git add  
 _**Q: What is git add?**_  
 **A: By using git add, you add the file you want into the staging area, where works are tracked and ready to be commit**  
+
+You can git add many ways
+* git add filename: you add specific file to the staging area
+```bash
+username:~/workspace/sep (master) $ touch sep-9 sep-10 sep-11 sep-12
+username:~/workspace/sep (master) $ git add sep-11
+username:~/workspace/sep (master) $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   sep-11
+```
+* git add . : you add all the exist file to the staging area
+```bahs
+username:~/workspace/sep (master) $ git add .
+username:~/workspace/sep (master) $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   sep-9
+        new file:   sep-10
+        new file:   sep-11
+        new file:   sep-12
+```
+* git add --all : you add all the file, including the deleted file to the staging area 
+```bash
+username:~/workspace/sep (master) $ mv sep-9 sep-09
+username:~/workspace/sep (master) $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   sep-10
+        new file:   sep-11
+        new file:   sep-12
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sep-09
+
+username:~/workspace/sep (master) $ git add --all
+username:~/workspace/sep (master) $ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   sep-09
+        new file:   sep-10
+        new file:   sep-11
+        new file:   sep-12
+```
 
 | Working Directory | Staging Area | Repository |
 | :-------------: |:-------------:|:-----:|
