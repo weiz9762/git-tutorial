@@ -124,11 +124,37 @@ Changes to be committed:
 ### git commit  
 _**Q: What is git commit?**_  
 **A: After add you add file to the staging area, the works are tracked but it is not being commit(not being saved). Therefore, git commit saves your work and remember the changes as commits!**
+
+The format you git commit will be `git commit -m "message/changes in the file"` it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
+
+```bash
+username:~/workspace/sep (master) $ git commit -m "create sep-year files"
+[master (root-commit) 7a6acd5] create sep-year files
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sep-09
+ create mode 100644 sep-10
+ create mode 100644 sep-11
+ create mode 100644 sep-12
+```
+
 ### git push
 _**Q: What is git push?**_  
-**A:**
+**A: Once you create a remote in GitHub and make connection with your local machine, you are now able to send your work to the GitHub where you can saved your work**
 
 
+```bash
+username:~/workspace/sep (master) $ git push
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:weiz9762/sep.git
+   7a6acd5..4920eae  master -> master
+```
+
+However, every time you push your work to the GitHub, you need clarify the name of remote and the branch you want to push to. Therefore, to make your life easier, command `git push -u orgin master` helps you default you push to the orgin master, so you can just easily push your work through `git push`
 
 ---
 ## Rolling Back Changes
