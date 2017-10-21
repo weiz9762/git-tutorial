@@ -164,12 +164,12 @@ There are many times that you made mistake and accidentally add, commit or even 
 
 ---
 ## Error Handling
-`git checkout -- file`: Undo the change in file
-`git reset HEAD file`: Unstage the file from staging area
-`git reset --soft HEAD~1`: Undo the commit
-`git reset HEAD~1`: Undo the commit and unstage the file
-`git reset --hard HEAD~1`: Undo the commit, unstaged the added files and undo the changes in the file
-`git revert SHA`: Undo commit snapshot in GitHub by replace the new commit (undo the push)
+`git checkout -- file`: Undo the change in file  
+`git reset HEAD file`: Unstage the file from staging area  
+`git reset --soft HEAD~1`: Undo the commit  
+`git reset HEAD~1`: Undo the commit and unstage the file  
+`git reset --hard HEAD~1`: Undo the commit, unstaged the added files and undo the changes in the file  
+`git revert SHA`: Undo commit snapshot in GitHub by replace the new commit (undo the push)  
 
 ---
 ## Collaboration
