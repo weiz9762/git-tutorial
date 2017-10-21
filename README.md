@@ -33,8 +33,11 @@ You will see something like this ![this](repo-setup.png)
 
 ---
 ## Workflow & Commands
-#### After setting up your repository, and having some basic understand of how git works, you will learning how to "push" your work to GitHub
+#### After setting up your repository, and having some basic understand of how git works, you will learning how to "push" your work to GitHub. As shown in the table below, Git project divied to three different part: working directory, staging area and repository. 
 
+| Working Directory | Staging Area | Repository |
+| :-------------: |:-------------:|:-----:|
+| Where the file stored before git add. You can makde changes to the file in working directory| Where the file stored after git add, it is a temporary space that file rest, so they can be commit anytime  | Where all the changes are being stored and saved it as commit |
 
 ### git status
 _**Q: What is git status?**_  
@@ -48,7 +51,7 @@ _**Q: What is git add?**_
 **A: By using git add, you add the file you want into the staging area, where works are tracked and ready to be commit**  
 
 You can git add many ways
-1. git add filename: you add specific file to the staging area
+1. `git add filename`: you add specific file to the staging area
 
 ```bash
 username:~/workspace/sep (master) $ touch sep-9 sep-10 sep-11 sep-12
@@ -64,7 +67,7 @@ Changes to be committed:
         new file:   sep-11
 ```
 
-2. git add . : you add all the exist file to the staging area
+2. `git add .` : you add all the exist file to the staging area
 
 ```bash
 username:~/workspace/sep (master) $ git add .
@@ -82,7 +85,7 @@ Changes to be committed:
         new file:   sep-12
 ```
 
-3. git add --all : you add all the file, including the deleted file to the staging area 
+3. `git add --all` : you add all the file, including the deleted file to the staging area 
 
 ```bash
 username:~/workspace/sep (master) $ mv sep-9 sep-09
@@ -118,9 +121,6 @@ Changes to be committed:
         new file:   sep-12
 ```
 
-| Working Directory | Staging Area | Repository |
-| :-------------: |:-------------:|:-----:|
-| Where the file stored before git add. You can makde changes to the file in working directory| Where the file stored after git add, it is a temporary space that file rest, so they can be commit anytime  | Where all the changes are being stored and saved it as commit |
 ### git commit  
 _**Q: What is git commit?**_  
 **A: After add you add file to the staging area, the works are tracked but it is not being commit(not being saved). Therefore, git commit saves your work and remember the changes as commits!**
