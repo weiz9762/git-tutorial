@@ -194,10 +194,13 @@ M       sep-11
 
 | Staging area before |Staging area after |
 |:------------------------:|:-----------------------:|
-|sep-11 (tracked|_no file is being tracked_ |
+|sep-11 (tracked)|_no file is being tracked_ |
 
 ---
 `git reset --soft HEAD~1`: Undo the commit  
+* The number after _~_ indicates how many commit you want to undo
+    * for example. ~1 means that you want to go 1 commit back, and ~2 will go 2 commits back, and so on.
+* As all the commands above, space is required, and there will be total of 3 spaces of this command
 
 git log before `git reset --soft HEAD~1`
 
@@ -214,6 +217,7 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
 ```
+* As you can see, there is total of commits in the repository, and the latest commit is the one on the commit on the top
 
 git log after `git reset --soft HEAD~1`
 ```
@@ -223,6 +227,8 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
 ```
+* As you do the command, latest command is not long on the repository and there is only one commit left
+
 ---
 `git reset HEAD~1`: single command that combine `git reset HEAD` and `git reset --soft HEAD~1` together, **it undo the commit and unstage the file**
 
