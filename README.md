@@ -164,12 +164,13 @@ There are many times that you made mistake and accidentally add, commit or even 
 `git checkout -- file`: Undo the change in file
 * file is the name of your file
 * space is required between _git_ and _checkout_, and there are also _space_ before and after _--_
-* The changes in the file will be gone immediately after the command, **so be careful of using it**
+* The changes in the file will be gone immediately after the command, _**SO BE CAREFUL OF USING IT!!**_
 
 ```bash
 username:~/workspace/sep (master) $ git checkout -- sep-09
 ```
-* In the command above, _spe-09_ is the file I want the changes being undo, and table before showing the texts in the sep-09 before and after the command
+* In the command above, _spe-09_ is the file I want the changes being undo
+* Table below showing the texts in the sep-09 before and after the command
 
 | File before git checkout | File after git checkout |
 |:------------------------:|:-----------------------:|
@@ -177,11 +178,19 @@ username:~/workspace/sep (master) $ git checkout -- sep-09
 
 ---
 `git reset HEAD file`: Unstage the file from staging area  
+* file is the name of your file
+* _HEAD_ should be captialized
+* space is required between _git_, _reset_, _HEAD_ and _file_ 
+* You can still add the file to the staging area afterward
+
 ```bash
 username:~/workspace/sep (master) $ git reset HEAD sep-11
 Unstaged changes after reset:
 M       sep-11
 ```
+* In the command above, _sep-11_ is the file that I want to unstage from the staging area
+* _M sep-11_ indicates the file that is being unstaged
+* Table below shows the file that is in the staging area
 
 | Staging area before |Staging area after |
 |:------------------------:|:-----------------------:|
