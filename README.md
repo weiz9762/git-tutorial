@@ -160,6 +160,7 @@ However, every time you push your work to the GitHub, you need clarify the name 
 ## Rolling Back Changes
 There are many times that you made mistake and accidentally add, commit or even push the file. There is not redo botton in git, but you can there are some ways that you can "fix" your mistakes
 
+---
 `git checkout -- file`: Undo the change in file  
 ```bash
 weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
@@ -169,6 +170,7 @@ weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 |:------------------------:|:-----------------------:|
 |This is all the new changes in the file| |
 
+---
 `git reset HEAD file`: Unstage the file from staging area  
 ```bash
 weiz9762:~/workspace/sep (master) $ git reset HEAD sep-11
@@ -180,6 +182,7 @@ M       sep-11
 |:------------------------:|:-----------------------:|
 |sep-11 (tracked|_no file is being tracked_ |
 
+---
 `git reset --soft HEAD~1`: Undo the commit  
 
 git log before `git reset --soft HEAD~1`
@@ -198,7 +201,6 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
     add readme
 ```
 
-
 git log after `git reset --soft HEAD~1`
 ```
 commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1 (HEAD -> master)
@@ -207,11 +209,12 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
 ```
-
+---
 `git reset HEAD~1`: single command that combine `git reset HEAD` and `git reset --soft HEAD~1` together, **it undo the commit and unstage the file**
 
 `git reset --hard HEAD~1`: command that commbine all `git reset HEAD`, `git reset --sot HEAD~1` and `git checkout`, **it undo the commit, unstaged the added files and undo the changes in the file**
 
+---
 All the above commands will helps you "undo" the change that is not being push to the GitHub, and 
 `git revert SHA` will Undo commit snapshot in GitHub by replace the new commit (undo the push)  
 
