@@ -161,10 +161,15 @@ However, every time you push your work to the GitHub, you need clarify the name 
 There are many times that you made mistake and accidentally add, commit or even push the file. There is not redo botton in git, but you can there are some ways that you can "fix" your mistakes
 
 ---
-`git checkout -- file`: Undo the change in file  
+`git checkout -- file`: Undo the change in file
+* file is the name of your file
+* space is required between _git_ and _checkout_, and there are also _space_ before and after _--_
+* The changes in the file will be gone immediately after the command, **so be careful of using it**
+
 ```bash
-weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
+username:~/workspace/sep (master) $ git checkout -- sep-09
 ```
+* In the command above, _spe-09_ is the file I want the changes being undo, and table before showing the texts in the sep-09 before and after the command
 
 | File before git checkout | File after git checkout |
 |:------------------------:|:-----------------------:|
@@ -173,7 +178,7 @@ weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 ---
 `git reset HEAD file`: Unstage the file from staging area  
 ```bash
-weiz9762:~/workspace/sep (master) $ git reset HEAD sep-11
+username:~/workspace/sep (master) $ git reset HEAD sep-11
 Unstaged changes after reset:
 M       sep-11
 ```
@@ -189,13 +194,13 @@ git log before `git reset --soft HEAD~1`
 
 ```
 commit 4280e5e3b91be31c1524333b0538fbbe88153fb1 (HEAD -> master, origin/master)
-Author: Wei Zheng <weiz9762@hstat.org>
+Author: User <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:59:31 2017 +0000
 
     change header size to #1
     
  commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1
-Author: Wei Zheng <weiz9762@hstat.org>
+Author: User <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
@@ -204,7 +209,7 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 git log after `git reset --soft HEAD~1`
 ```
 commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1 (HEAD -> master)
-Author: Wei Zheng <weiz9762@hstat.org>
+Author: User <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
@@ -221,7 +226,9 @@ All the above commands will helps you "undo" the change that is not being push t
 
 ---
 ## Error Handling
-
+`rm -rf .git`:
 
 ---
 ## Collaboration
+`git clone`
+fork:
