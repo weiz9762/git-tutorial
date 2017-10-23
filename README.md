@@ -27,8 +27,22 @@ _by Wei Zheng_
 
 ---
 ## Repository Setup
-You will see something like this ![this](repo-setup.png)
+### _How do you create a repository?_
+1. On the top right, you will see something like this in your GitHub home page ![this](icon.png), go head click the "**+**"
+2. After you do so, you will see the following, ![plus](plus extension), click "**New repository"** to create your new repo!
+3. Under the **Repository name**, fill in the name of your repository, as the image below, I named my repository as **new-repository**
+4. After filled out the name, click on the green button.
+5. You will see something like that [SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
+6. Then follow the directions:
+    * go back to your c9, create a folder and named it the exactly the same thing as your repo name (hint: use `mkdir foldername`)
+    * move into your new folder (`cd foldername`), and create a README.md file (`touch READ.md`)
+    * type `git init` in your new folder, **never use `git init` in your workspace**
+    * type `git add README.md` in your terminal
+    * type `git commit -m "first commit"`
+    * go back to your github and copy `git remote add origin git@github.com:usernmae/xxxx.git`
+    * Finally, type in `git push -u origin master`  
 
+###BOOM! You have a repository on the GitHub now!
 
 
 ---
@@ -161,16 +175,10 @@ However, every time you push your work to the GitHub, you need clarify the name 
 There are many times that you made mistake and accidentally add, commit or even push the file. There is not redo botton in git, but you can there are some ways that you can "fix" your mistakes
 
 ---
-`git checkout -- file`: Undo the change in file
-* file is the name of your file
-* space is required between _git_ and _checkout_, and there are also _space_ before and after _--_
-* The changes in the file will be gone immediately after the command, _**SO BE CAREFUL OF USING IT!!**_
-
+`git checkout -- file`: Undo the change in file  
 ```bash
-username:~/workspace/sep (master) $ git checkout -- sep-09
+weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 ```
-* In the command above, _spe-09_ is the file I want the changes being undo
-* Table below showing the texts in the sep-09 before and after the command
 
 | File before git checkout | File after git checkout |
 |:------------------------:|:-----------------------:|
@@ -178,57 +186,43 @@ username:~/workspace/sep (master) $ git checkout -- sep-09
 
 ---
 `git reset HEAD file`: Unstage the file from staging area  
-* file is the name of your file
-* _HEAD_ should be captialized
-* space is required between _git_, _reset_, _HEAD_ and _file_ 
-* You can still add the file to the staging area afterward
-
 ```bash
-username:~/workspace/sep (master) $ git reset HEAD sep-11
+weiz9762:~/workspace/sep (master) $ git reset HEAD sep-11
 Unstaged changes after reset:
 M       sep-11
 ```
-* In the command above, _sep-11_ is the file that I want to unstage from the staging area
-* _M sep-11_ indicates the file that is being unstaged
-* Table below shows the file that is in the staging area
 
 | Staging area before |Staging area after |
 |:------------------------:|:-----------------------:|
-|sep-11 (tracked)|_no file is being tracked_ |
+|sep-11 (tracked|_no file is being tracked_ |
 
 ---
 `git reset --soft HEAD~1`: Undo the commit  
-* The number after _~_ indicates how many commit you want to undo
-    * for example. ~1 means that you want to go 1 commit back, and ~2 will go 2 commits back, and so on.
-* As all the commands above, space is required, and there will be total of 3 spaces of this command
 
 git log before `git reset --soft HEAD~1`
 
 ```
 commit 4280e5e3b91be31c1524333b0538fbbe88153fb1 (HEAD -> master, origin/master)
-Author: User <weiz9762@hstat.org>
+Author: Wei Zheng <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:59:31 2017 +0000
 
     change header size to #1
     
  commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1
-Author: User <weiz9762@hstat.org>
+Author: Wei Zheng <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
 ```
-* As you can see, there is total of commits in the repository, and the latest commit is the one on the commit on the top
 
 git log after `git reset --soft HEAD~1`
 ```
 commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1 (HEAD -> master)
-Author: User <weiz9762@hstat.org>
+Author: Wei Zheng <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
 ```
-* As you do the command, latest command is not long on the repository and there is only one commit left
-
 ---
 `git reset HEAD~1`: single command that combine `git reset HEAD` and `git reset --soft HEAD~1` together, **it undo the commit and unstage the file**
 
@@ -238,12 +232,12 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 All the above commands will helps you "undo" the change that is not being push to the GitHub, and 
 `git revert SHA` will Undo commit snapshot in GitHub by replace the new commit (undo the push)  
 
+* SHA is the series number of your commit, which can be found by using `git log`
+
 
 ---
 ## Error Handling
-`rm -rf .git`:
+
 
 ---
 ## Collaboration
-`git clone`
-fork:
