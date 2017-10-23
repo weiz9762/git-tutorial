@@ -29,7 +29,7 @@ _by Wei Zheng_
 ## Repository Setup
 ### _How do you create a repository?_
 1. On the top right, you will see something like this in your GitHub home page ![this](icon.png), go head click the "**+**"
-2. After you do so, you will see the following, ![plus](plus extension.png), click "**New repository"** to create your new repo!
+2. After you do so, you will see the following, ![plus](plus-extension.png), click "**New repository"** to create your new repo!
 3. Under the **Repository name**, fill in the name of your repository, as the image below, I named my repository as **new-repository**
 4. After filled out the name, click on the green button.
 5. You will see something like that [SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
