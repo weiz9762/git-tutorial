@@ -245,6 +245,6 @@ It is real easy to find out if _git_ is running in your repository, there are tw
 
 ---
 ## Collaboration
-`git clone`:
-`git pull`:
+`git clone`: make a git repository copy from a remote source. Also adds the original location as a remopte so you can push it if you have permissions
+`git pull`: pill down the files from the remote repository and merges it with local one
 fork:
