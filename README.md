@@ -237,7 +237,14 @@ All the above commands will helps you "undo" the change that is not being push t
 
 ---
 ## Error Handling
+If you accidentally use `git init` in your folder, and you want to undo it, all you have to do is `rm -rf .git`
 
+It is real easy to find out if _git_ is running in your repository, there are two ways you can know if git is running
+1. Use `ls -all`, and it will shows all files (including hidden file), if you see _.git_, it means that git is runnning in your repository 
+2. After your folder is you see _(master)_, it means git is running
 
 ---
 ## Collaboration
+`git clone`:
+`git pull`:
+fork:
