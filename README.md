@@ -4,20 +4,20 @@ _by Wei Zheng_
 
 ---
 ## Git vs. GitHub
-* Git is the system that used for version control, in other word, git helps you keep trackyour code
-* GitHub is the platform that you can to share your work with others, and you can also visually see your code without using the command line
+* Git is the system that used for version control, in other words, git helps you keep track of your code.
+* GitHub is the platform that you can share your work with others, and you can also visually see your code without using the command line.
 
-#### _GitHub need Git, but git does not required GitHub!_
+#### _GitHub needs Git, but git does not require GitHub!_
 
 
 ---
 ## Initial Setup
 ### _How do you create a GitHub Account?_
 * [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](https://i.imgur.com/Bss1bfG.png)
-* After you filled in your information, clcik the ![green button](https://i.imgur.com/AVjzXTR.png?2) "Create an account"
+* After you fill in your information, click on the ![green button](https://i.imgur.com/AVjzXTR.png?2) "Create an account"
 * You will now choose your plan, choose "Unlimited public repositories for free" !["Unlimited public repositories for free"](https://i.imgur.com/24WC8iQ.png?2)  
 * Lastly, you will Tailor you experience but checking the box that applied to you ![step3](https://i.imgur.com/buAqdYv.png?2)  
-#### After Setup your account, you will need create a SSH key  
+#### After Setup your account, you will need to create a SSH key. 
 ### _So, How do you create a SSH key?_
 * First, as you login your GitHub account, you will see something like this ![main page](github-homepage)
 * Then, you will go to the top right and click your icon, and you will see ![icon](icon.png) and click the "setting"
