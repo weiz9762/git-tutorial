@@ -258,5 +258,5 @@ fork: Similar like git clone, it make a git repository cope from a remote soure,
 Here is the step of forking:
 1. One the top right, you will see something like this, ![fork](fork.png) and go ahead click it
 2. After you do so, you will jump to something like this ![forking](forking-process.png), and you will wait for it to complete
-3. Then, you will have an exact repository, go back to c9, go head do the `git pull`
-4. Now you have a repository copy in your local machine!
+3. Then, you will have an exact repository in remote, go head clone it (follow directions in `git clone`)
+4. Go back to c9, Now you have a repository copy in your local machine!
