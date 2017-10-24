@@ -4,20 +4,20 @@ _by Wei Zheng_
 
 ---
 ## Git vs. GitHub
-* Git is the system that used for version control, in other words, git helps you keep track of your code.
-* GitHub is the platform that you can share your work with others, and you can also visually see your code without using the command line.
+* Git is the system that used for version control, in other word, git helps you keep trackyour code
+* GitHub is the platform that you can to share your work with others, and you can also visually see your code without using the command line
 
-#### _GitHub needs Git, but git does not require GitHub!_
+#### _GitHub need Git, but git does not required GitHub!_
 
 
 ---
 ## Initial Setup
 ### _How do you create a GitHub Account?_
 * [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](https://i.imgur.com/Bss1bfG.png)
-* After you fill in your information, click on the ![green button](https://i.imgur.com/AVjzXTR.png?2) "Create an account"
+* After you filled in your information, clcik the ![green button](https://i.imgur.com/AVjzXTR.png?2) "Create an account"
 * You will now choose your plan, choose "Unlimited public repositories for free" !["Unlimited public repositories for free"](https://i.imgur.com/24WC8iQ.png?2)  
 * Lastly, you will Tailor you experience but checking the box that applied to you ![step3](https://i.imgur.com/buAqdYv.png?2)  
-#### After Setup your account, you will need to create a SSH key. 
+#### After Setup your account, you will need create a SSH key  
 ### _So, How do you create a SSH key?_
 * First, as you login your GitHub account, you will see something like this ![main page](github-homepage)
 * Then, you will go to the top right and click your icon, and you will see ![icon](icon.png) and click the "setting"
@@ -30,9 +30,9 @@ _by Wei Zheng_
 ### _How do you create a repository?_
 1. On the top right, you will see something like this in your GitHub home page ![this](icon.png), go head click the "**+**"
 2. After you do so, you will see the following, ![plus](plus-extension.png), click "**New repository"** to create your new repo!
-3. Under the **Repository name**, fill in the name of your repository, as the image below, I named my repository as **new-repository**
+3. Under the **Repository name**, fill in the name of your repository. As the image below, I named my repository as **new-repository**
 4. After filled out the name, click on the green button.
-5. You will see something like that [SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
+5. You will see something like that ![SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
 6. Then follow the directions:
     * go back to your c9, create a folder and named it the exactly the same thing as your repo name (hint: use `mkdir foldername`)
     * move into your new folder (`cd foldername`), and create a README.md file (`touch READ.md`)
@@ -137,9 +137,9 @@ Changes to be committed:
 
 ### git commit  
 _**Q: What is git commit?**_  
-**A: After add you add file to the staging area, the works are tracked but it is not being commit(not being saved). Therefore, git commit saves your work and remember the changes as commits!**
+**A: After add you add file to the staging area, the works are tracked but it is not being commit (not being saved). Therefore, git commit saves your work and remember the changes as commits!**
 
-The format you git commit will be `git commit -m "message/changes in the file"` it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
+The format you git commit will be `git commit -m "message/changes in the file"`. The message should be in present tense, and it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
 
 ```bash
 username:~/workspace/sep (master) $ git commit -m "create sep-year files"
@@ -234,7 +234,6 @@ All the above commands will helps you "undo" the change that is not being push t
 
 * SHA is the series number of your commit, which can be found by using `git log`
 
-
 ---
 ## Error Handling
 If you accidentally use `git init` in your folder, and you want to undo it, all you have to do is `rm -rf .git`
@@ -245,6 +244,19 @@ It is real easy to find out if _git_ is running in your repository, there are tw
 
 ---
 ## Collaboration
-`git clone`: make a git repository copy from a remote source. Also adds the original location as a remopte so you can push it if you have permissions
+`git clone`: make a git repository copy from a remote source (copy all the content in other's remote). You can also push its remote source if you have permissions from the owner.
+
+1. In order to clone, you need go to the github page that you want to clone, and click on the green button on the right ![green-gitclone](gitclone.png) 
+2. make sure it is _SHH_ instead of HTTPS, it will be something like **git@github.com:username/repo-name.git**
+3. Then, go back to the terminal, type `git clone SHH`, where the SHH is the key you just copied.
+Wooh! You just clone the repository by using `git clone`
+
 `git pull`: pill down the files from the remote repository and merges it with local one
-fork:
+
+fork: Similar like git clone, it make a git repository cope from a remote soure, however it also create new remote that automically connect to your local machine. Therefore, if you fork other's repository, you are about to push your own remote.
+
+Here is the step of forking:
+1. One the top right, you will see something like this, ![fork](fork.png) and go ahead click it
+2. After you do so, you will jump to something like this ![forking](forking-process.png), and you will wait for it to complete
+3. Then, you will have an exact repository, go back to c9, go head do the `git pull`
+4. Now you have a repository copy in your local machine!
