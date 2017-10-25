@@ -30,8 +30,8 @@ _by Wei Zheng_
 ### _How do you create a repository?_
 1. On the top right, you will see something like this in your GitHub home page ![this](icon.png), go head click the "**+**"
 2. After you do so, you will see the following, ![plus](plus-extension.png), click "**New repository"** to create your new repo!
-3. Under the **Repository name**, fill in the name of your repository. As the image below, I named my repository as **new-repository**
-4. After filled out the name, click on the green button.
+3. Under the **Repository name**, fill in the name of your repository. As the image below, I named my repository as **new-repository** ![repo-name](repo-name.png)
+4. After filled out the name, click on the green button. ![green](green-create-repo.png)
 5. You will see something like that ![SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
 6. Then follow the directions:
     * go back to your c9, create a folder and named it the exactly the same thing as your repo name (hint: use `mkdir foldername`)
