@@ -194,7 +194,7 @@ M       sep-11
 
 | Staging area before |Staging area after |
 |:------------------------:|:-----------------------:|
-|sep-11 (tracked|_no file is being tracked_ |
+|sep-11 (tracked)|_no file is being tracked_ |
 
 ---
 `git reset --soft HEAD~1`: Undo the commit  
@@ -246,6 +246,7 @@ It is real easy to find out if _git_ is running in your repository, there are tw
 ## Collaboration
 `git clone`: make a git repository copy from a remote source (copy all the content in other's remote). You can also push its remote source if you have permissions from the owner.
 
+### Below is the step of cloning
 1. In order to clone, you need go to the github page that you want to clone, and click on the green button on the right ![green-gitclone](gitclone.png) 
 2. make sure it is _SHH_ instead of HTTPS, it will be something like **git@github.com:username/repo-name.git**
 3. Then, go back to the terminal, type `git clone SHH`, where the SHH is the key you just copied.
@@ -255,7 +256,7 @@ Wooh! You just clone the repository by using `git clone`
 
 fork: Similar like git clone, it make a git repository cope from a remote soure, however it also create new remote that automically connect to your local machine. Therefore, if you fork other's repository, you are about to push your own remote.
 
-Here is the step of forking:
+### Here is the step of forking:
 1. One the top right, you will see something like this, ![fork](fork.png) and go ahead click it
 2. After you do so, you will jump to something like this ![forking](forking-process.png), and you will wait for it to complete
 3. Then, you will have an exact repository in remote, go head clone it (follow directions in `git clone`)
