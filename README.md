@@ -56,6 +56,7 @@ _by Wei Zheng_
 ### git status
 _**Q: What is git status?**_  
 **A: git status is the git command that helps you know the status of your files, there are three different status of file that you can find through git status**
+**How to type: git(space)status**
 1. Untracked: The file is in your directory, but it is not in the staging area (not ready to be commited)
 2. Modified: The file was previously added, but there is change of the file (being renamed or deleted)
 3. Tracked/Staged: The file is in the staging area and ready to be commit!!
@@ -67,6 +68,8 @@ _**Q: What is git add?**_
 You can git add many ways
 1. `git add filename`: you add specific file to the staging area
 **How to type: git(space)add(space)filename**
+
+_In the example below, I created for files, but I only add **sep-11** to the staging file_
 
 ```bash
 username:~/workspace/sep (master) $ touch sep-9 sep-10 sep-11 sep-12
@@ -85,6 +88,8 @@ Changes to be committed:
 2. `git add .` : you add all the exist file to the staging area
 **How to type: git(space)add(space).**
 
+_In the example below, I add all the files I just created to the staging area_
+
 ```bash
 username:~/workspace/sep (master) $ git add .
 username:~/workspace/sep (master) $ git status
@@ -101,8 +106,10 @@ Changes to be committed:
         new file:   sep-12
 ```
 
-3. `git add --all` : you add all the file, including the deleted file to the staging area 
+3. `git add --all` : you add all the file, including the deleted/renmaed file to the staging area 
 **How to type: git(space)add(space)--all**
+
+_In the example below, I renamed the **sep-9** to **sep-09**, so if I do `git add .`, **sep-09** is not going to be add to staging area. Therefore, I used `git add --all` to add all the files_
 
 ```bash
 username:~/workspace/sep (master) $ mv sep-9 sep-09
@@ -145,6 +152,8 @@ _**Q: What is git commit?**_
 
 The format you git commit will be `git commit -m "message/changes in the file"`. The message should be in present tense, and it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
 
+_In the example below, I commmited my changes, and leave a message of what I did_
+
 ```bash
 username:~/workspace/sep (master) $ git commit -m "create sep-year files"
 [master (root-commit) 7a6acd5] create sep-year files
@@ -158,7 +167,9 @@ username:~/workspace/sep (master) $ git commit -m "create sep-year files"
 ### git push
 _**Q: What is git push?**_  
 **A: Once you create a remote in GitHub and make connection with your local machine, you are now able to send your work to the GitHub where you can saved your work**
+**How to type: git(space)push**
 
+_In the example, below, I push my latest commit to the GitHub remote_
 
 ```bash
 username:~/workspace/sep (master) $ git push
@@ -179,7 +190,9 @@ However, every time you push your work to the GitHub, you need clarify the name 
 There are many times that you made mistake and accidentally add, commit or even push the file. There is not redo botton in git, but you can there are some ways that you can "fix" your mistakes
 
 ---
-`git checkout -- file`: Undo the change in file  
+`git checkout -- filename`: Undo the change in file  
+**How to type: git(space)checkout(space)--(space)filename**
+
 ```bash
 weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 ```
@@ -189,7 +202,9 @@ weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 |This is all the new changes in the file| |
 
 ---
-`git reset HEAD file`: Unstage the file from staging area  
+`git reset HEAD filename`: Unstage the file from staging area 
+**How to type: git(space)reset(space)HEAD(space)filename**  
+
 ```bash
 weiz9762:~/workspace/sep (master) $ git reset HEAD sep-11
 Unstaged changes after reset:
@@ -202,18 +217,19 @@ M       sep-11
 
 ---
 `git reset --soft HEAD~1`: Undo the commit  
+**How to type: git(space)reset(space)--soft(space)HEAD~1**
 
 git log before `git reset --soft HEAD~1`
 
 ```
-commit 4280e5e3b91be31c1524333b0538fbbe88153fb1 (HEAD -> master, origin/master)
-Author: Wei Zheng <weiz9762@hstat.org>
+commit 4280e5e3b91be31c1524333b0538fbbe88xxxxxxx (HEAD -> master, origin/master)
+Author: Username <user@mail.com>
 Date:   Sun Oct 15 17:59:31 2017 +0000
 
     change header size to #1
     
- commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1
-Author: Wei Zheng <weiz9762@hstat.org>
+ commit 38387d4a6e6fe871e28fb1cca6cdabebe9xxxxxx
+Author: Username <user@mail.com>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
     add readme
@@ -221,7 +237,7 @@ Date:   Sun Oct 15 17:58:27 2017 +0000
 
 git log after `git reset --soft HEAD~1`
 ```
-commit 38387d4a6e6fe871e28fb1cca6cdabebe9dacdc1 (HEAD -> master)
+commit 38387d4a6e6fe871e28fb1cca6cdabebe9xxxxxx (HEAD -> master)
 Author: Wei Zheng <weiz9762@hstat.org>
 Date:   Sun Oct 15 17:58:27 2017 +0000
 
@@ -258,7 +274,7 @@ Wooh! You just clone the repository by using `git clone`
 
 `git pull`: pill down the files from the remote repository and merges it with local one
 
-fork: Similar like git clone, it make a git repository cope from a remote soure, however it also create new remote that automically connect to your local machine. Therefore, if you fork other's repository, you are about to push your own remote.
+**fork**: Similar like git clone, it make a git repository cope from a remote soure, however it also create new remote that automically connect to your local machine. Therefore, if you fork other's repository, you are about to push your own remote.
 
 ### Here is the step of forking:
 1. One the top right, you will see something like this, ![fork](fork.png) and go ahead click it
