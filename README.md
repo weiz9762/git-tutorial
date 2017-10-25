@@ -55,8 +55,8 @@ _by Wei Zheng_
 
 ### git status
 _**Q: What is git status?**_  
-**A: git status is the git command that helps you know the status of your files, there are three different status of file that you can find through git status**
-**How to type: git(space)status**
+**A: git status is the git command that helps you know the status of your files, there are three different status of file that you can find through git status**  
+**- How to type: git(space)status**
 1. Untracked: The file is in your directory, but it is not in the staging area (not ready to be commited)
 2. Modified: The file was previously added, but there is change of the file (being renamed or deleted)
 3. Tracked/Staged: The file is in the staging area and ready to be commit!!
@@ -64,10 +64,9 @@ _**Q: What is git status?**_
 ### git add  
 _**Q: What is git add?**_  
 **A: By using git add, you add the file you want into the staging area, where works are tracked and ready to be commit**  
-
-You can git add many ways
-1. `git add filename`: you add specific file to the staging area
-**How to type: git(space)add(space)filename**
+#### You can git add many ways
+1. `git add filename`: you add specific file to the staging area  
+**- How to type: git(space)add(space)filename**
 
 _In the example below, I created for files, but I only add **sep-11** to the staging file_
 
@@ -85,8 +84,8 @@ Changes to be committed:
         new file:   sep-11
 ```
 
-2. `git add .` : you add all the exist file to the staging area
-**How to type: git(space)add(space).**
+2. `git add .` : you add all the exist file to the staging area  
+**- How to type: git(space)add(space).**  
 
 _In the example below, I add all the files I just created to the staging area_
 
@@ -106,8 +105,8 @@ Changes to be committed:
         new file:   sep-12
 ```
 
-3. `git add --all` : you add all the file, including the deleted/renmaed file to the staging area 
-**How to type: git(space)add(space)--all**
+3. `git add --all` : you add all the file, including the deleted/renmaed file to the staging area   
+**- How to type: git(space)add(space)--all**
 
 _In the example below, I renamed the **sep-9** to **sep-09**, so if I do `git add .`, **sep-09** is not going to be add to staging area. Therefore, I used `git add --all` to add all the files_
 
@@ -147,8 +146,8 @@ Changes to be committed:
 
 ### git commit  
 _**Q: What is git commit?**_  
-**A: After add you add file to the staging area, the works are tracked but it is not being commit (not being saved). Therefore, git commit saves your work and remember the changes as commits!**
-**How to type: git(space)commit(space)-m(space)"message"**
+**A: After add you add file to the staging area, the works are tracked but it is not being commit (not being saved). Therefore, git commit saves your work and remember the changes as commits!**  
+**- How to type: git(space)commit(space)-m(space)"message"**
 
 The format you git commit will be `git commit -m "message/changes in the file"`. The message should be in present tense, and it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
 
@@ -166,8 +165,8 @@ username:~/workspace/sep (master) $ git commit -m "create sep-year files"
 
 ### git push
 _**Q: What is git push?**_  
-**A: Once you create a remote in GitHub and make connection with your local machine, you are now able to send your work to the GitHub where you can saved your work**
-**How to type: git(space)push**
+**A: Once you create a remote in GitHub and make connection with your local machine, you are now able to send your work to the GitHub where you can saved your work**  
+**- How to type: git(space)push**
 
 _In the example, below, I push my latest commit to the GitHub remote_
 
@@ -191,7 +190,7 @@ There are many times that you made mistake and accidentally add, commit or even 
 
 ---
 `git checkout -- filename`: Undo the change in file  
-**How to type: git(space)checkout(space)--(space)filename**
+**- How to type: git(space)checkout(space)--(space)filename**
 
 ```bash
 weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
@@ -203,7 +202,7 @@ weiz9762:~/workspace/sep (master) $ git checkout -- sep-09
 
 ---
 `git reset HEAD filename`: Unstage the file from staging area 
-**How to type: git(space)reset(space)HEAD(space)filename**  
+**- How to type: git(space)reset(space)HEAD(space)filename**  
 
 ```bash
 weiz9762:~/workspace/sep (master) $ git reset HEAD sep-11
@@ -217,7 +216,7 @@ M       sep-11
 
 ---
 `git reset --soft HEAD~1`: Undo the commit  
-**How to type: git(space)reset(space)--soft(space)HEAD~1**
+**- How to type: git(space)reset(space)--soft(space)HEAD~1**
 
 git log before `git reset --soft HEAD~1`
 
