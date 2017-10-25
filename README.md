@@ -66,6 +66,7 @@ _**Q: What is git add?**_
 
 You can git add many ways
 1. `git add filename`: you add specific file to the staging area
+**How to type: git(space)add(space)filename**
 
 ```bash
 username:~/workspace/sep (master) $ touch sep-9 sep-10 sep-11 sep-12
@@ -82,6 +83,7 @@ Changes to be committed:
 ```
 
 2. `git add .` : you add all the exist file to the staging area
+**How to type: git(space)add(space).**
 
 ```bash
 username:~/workspace/sep (master) $ git add .
@@ -100,6 +102,7 @@ Changes to be committed:
 ```
 
 3. `git add --all` : you add all the file, including the deleted file to the staging area 
+**How to type: git(space)add(space)--all**
 
 ```bash
 username:~/workspace/sep (master) $ mv sep-9 sep-09
@@ -138,6 +141,7 @@ Changes to be committed:
 ### git commit  
 _**Q: What is git commit?**_  
 **A: After add you add file to the staging area, the works are tracked but it is not being commit (not being saved). Therefore, git commit saves your work and remember the changes as commits!**
+**How to type: git(space)commit(space)-m(space)"message"**
 
 The format you git commit will be `git commit -m "message/changes in the file"`. The message should be in present tense, and it is extremely important that your message include what you changed in the file, so you or your collaborator can go back to work you have done.
 
