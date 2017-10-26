@@ -5,7 +5,7 @@ _by Wei Zheng_
 ---
 ## Git vs. GitHub
 * Git is the system that used for version control, in other word, git helps you keep trackyour code
-* GitHub is the platform that you can to share your work with others, and you can also visually see your code without using the command line
+* GitHub is the platform that you can to share your work with others, and you can also visually see your folders/files without using the command line
 
 #### _GitHub need Git, but git does not required GitHub!_
 
