@@ -13,16 +13,25 @@ _by Wei Zheng_
 ---
 ## Initial Setup
 ### _How do you create a GitHub Account?_
-* [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](https://i.imgur.com/Bss1bfG.png)
-* After you filled in your information, clcik the ![green button](https://i.imgur.com/AVjzXTR.png?2) "Create an account"
-* You will now choose your plan, choose "Unlimited public repositories for free" !["Unlimited public repositories for free"](https://i.imgur.com/24WC8iQ.png?2)  
-* Lastly, you will Tailor you experience but checking the box that applied to you ![step3](https://i.imgur.com/buAqdYv.png?2)  
-#### After Setup your account, you will need create a SSH key  
-### _So, How do you create a SSH key?_
-* First, as you login your GitHub account, you will see something like this ![main page](github-homepage)
-* Then, you will go to the top right and click your icon, and you will see ![icon](icon.png) and click the "setting"
-* After you clicked setting, you the right you will see something like this ![SHH key setting](setting-page.png), go head and clicked on "SSH and GPG keys"
-* As you do so, you will see SSH Keys and GPG Keys sections, on the right of SSH Keys section, clicked "New SSH key" ![New SSH keys green button](https://i.imgur.com/N2Gmfzd.png)
+1. [Go to Github Sign Up Page](https://github.com/join?source=header) and you will see something like ![this](account-1.png)
+2. After you filled in your information, clcik the ![green button](green-create-account.png) "Create an account"
+3. You will now choose your plan, choose "Unlimited public repositories for free" !["Unlimited public repositories for free"](plan.png)  
+4. Lastly, you will Tailor you experience but checking the box that applied to you ![step3](step-3.png)
+5. Go to you email and verify your email
+**And NOW, you have your own GitHub account!**
+
+#### After Setup your account, you will need create a SSH key, the key that use to authenticate the user (make sure your are the owner of the account)
+### _So, How do you create a SSH key?_  
+#### Heads-Up! All the following directions only apply if you had setted up you [clound9 account](https://c9.io/)
+1. First, as you login your GitHub account, you will see something like this ![main page](github-homepage.png)
+2. Then, you will go to the top right and click your icon, and you will see ![icon](icon.png) and click the "**setting**"
+3. After you clicked setting, you the right you will see something like this ![SHH key setting](setting-page.png), go head and clicked on "**SSH and GPG keys**"
+4. As you do so, you will see SSH Keys and GPG Keys sections, on the right of SSH Keys section, clicked "New SSH key" ![New SSH keys green button](newsshkey.png)
+5. Go to your c9 page, and on the top right, go head and click on the setting(gear icon) ![gear](c9.setting.png)
+6. On the left, click **SSH Keys**, and copy all the things in the grey box, like the pic shown ![c9SHH](c9-ssh.png)
+7. Go back to GitHub, put title as "**clound9**" and paste everything to the **Key** box and click **Add SSH Key**
+
+**Here you go, your GitHub is connected to your c9!**
 
 
 ---
@@ -35,7 +44,7 @@ _by Wei Zheng_
 5. You will see something like that ![SHH](repo-steps.png), make sure you select "SSH" instead of "HTML", so you don't need to type your username and password everything you use it
 6. Then follow the directions:
     * go back to your c9, create a folder and named it the exactly the same thing as your repo name (hint: use `mkdir foldername`)
-    * move into your new folder (`cd foldername`), and create a README.md file (`touch READ.md`)
+    * move into your new folder (`cd foldername`), and create a README.md file (`touch README.md`)
     * type `git init` in your new folder, **never use `git init` in your workspace**
     * type `git add README.md` in your terminal
     * type `git commit -m "first commit"`
